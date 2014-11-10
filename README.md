@@ -1,6 +1,8 @@
 Simple-Serve
 ===
 
+[![Build Status](https://travis-ci.org/kolodny/simple-serve.svg?branch=master)](https://travis-ci.org/kolodny/simple-serve)
+
 Sample Usage:
 
 ```js
