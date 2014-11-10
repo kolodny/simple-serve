@@ -1,10 +1,10 @@
 {
   "name": "simple-serve",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple Rest Server",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",

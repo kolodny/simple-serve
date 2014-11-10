@@ -9,6 +9,8 @@ module.exports = function(routes) {
       var ext = /\.(\w+$)/.exec(request.url);
       if (!ext) {
         ext = 'html';
+      } else {
+        ext = ext[1];
       }
       switch(ext) {
         case 'html':
