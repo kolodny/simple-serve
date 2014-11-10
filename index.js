@@ -2,7 +2,7 @@ var http = require('http');
 var qs = require('querystring');
 var url = require('url');
 
-module.exports = function(routes) {
+module.exports = function(routes, callback) {
   return function(cb) {
     var server = http.createServer(function (request,response) {
       var method = request.method.toUpperCase();
@@ -42,7 +42,7 @@ module.exports = function(routes) {
           } else {
             response.end(compile(route, query, {}));
           }
-          return;
+          return callback && callback(request);
         }
       }
       response.writeHead(404, {"Content-Type": "text/plain"});
